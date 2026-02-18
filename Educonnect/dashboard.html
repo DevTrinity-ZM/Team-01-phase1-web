@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educonnect • Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dash-shell">
+        <aside class="dash-sidebar">
+            <div class="dash-logo">
+                <span class="dot"></span>
+                <span>Educonnect</span>
+            </div>
+            <nav class="dash-nav">
+                <a href="#" class="nav-item active">
+                    <span class="icon">🏠</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">🗓</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📚</span>
+                    <span>Study groups</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">✅</span>
+                    <span>Tasks</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">💬</span>
+                    <span>Messages</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="dash-footer">
+                <p class="small-label">Today</p>
+                <p class="small-value">On track • 3 of 4 tasks done</p>
+            </div>
+        </aside>
+
+        <div class="dash-main">
+            <header class="dash-header">
+                <div>
+                    <h1>Welcome back, Student</h1>
+                    <p class="subtitle">Here’s a snapshot of your academic life today.</p>
+                </div>
+                <div class="header-right">
+                    <div class="pill">
+                        <span class="dot green"></span>
+                        Week 5 • Semester 1
+                    </div>
+                    <button class="icon-button" aria-label="Notifications">🔔</button>
+                    <button class="icon-button theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="avatar">
+                        <span>TS</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dash-content">
+                <section class="cards-row">
+                    <article class="summary-card">
+                        <p class="card-label">Next class</p>
+                        <p class="card-main">Computer Science 201</p>
+                        <p class="card-meta">Today • 11:00 – 12:30 • Lab B3</p>
+                    </article>
+                    <article class="summary-card">
+                        <p class="card-label">Tasks due this week</p>
+                        <p class="card-main">4</p>
+                        <p class="card-meta">2 assignments • 1 quiz • 1 project</p>
+                    </article>
+                    <article class="summary-card">
+                        <p class="card-label">Study focus</p>
+                        <p class="card-main">Data Structures</p>
+                        <p class="card-meta">Group “Algo Masters” • Today at 18:00</p>
+                    </article>
+                </section>
+
+                <section class="grid-two">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <h2>Today’s timetable</h2>
+                            <span class="tag">3 classes</span>
+                        </div>
+                        <ul class="time-list">
+                            <li>
+                                <span class="time">08:00</span>
+                                <div>
+                                    <p class="title">Mathematics 201</p>
+                                    <p class="detail">Room A1.04 • Prof. Ndlovu</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="time">11:00</span>
+                                <div>
+                                    <p class="title">Computer Science Lab</p>
+                                    <p class="detail">Lab B3 • Practical</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="time">14:00</span>
+                                <div>
+                                    <p class="title">Communication Skills</p>
+                                    <p class="detail">Room C2.10</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="panel">
+                        <div class="panel-header">
+                            <h2>Upcoming deadlines</h2>
+                            <span class="tag warning">4 due</span>
+                        </div>
+                        <ul class="deadline-list">
+                            <li>
+                                <p class="title">Data Structures assignment 2</p>
+                                <p class="detail">Due tomorrow • 23:59</p>
+                            </li>
+                            <li>
+                                <p class="title">Maths problem set</p>
+                                <p class="detail">Due Thursday • 16:00</p>
+                            </li>
+                            <li>
+                                <p class="title">Communication skills presentation</p>
+                                <p class="detail">Due Friday • In class</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="grid-two">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <h2>Your study groups</h2>
+                            <button class="link-button">View all</button>
+                        </div>
+                        <ul class="group-list">
+                            <li>
+                                <p class="title">Algo Masters</p>
+                                <p class="detail">Data Structures • 8 members • Meets Tue, Thu</p>
+                            </li>
+                            <li>
+                                <p class="title">Stats Squad</p>
+                                <p class="detail">Statistics 102 • 5 members • Meets Wed</p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="panel">
+                        <div class="panel-header">
+                            <h2>Academic chat</h2>
+                            <button class="link-button">Open chat</button>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">
+                                <p class="from">Group • Algo Masters</p>
+                                <p class="text">“Has anyone figured out question 4 of the assignment yet?”</p>
+                            </div>
+                            <div class="chat-message">
+                                <p class="from">Lecturer • Prof. Ndlovu</p>
+                                <p class="text">“Reminder: upload your lab reports before Friday.”</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

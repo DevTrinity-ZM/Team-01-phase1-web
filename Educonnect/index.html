@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" initial="scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Educonnect</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -17,17 +17,24 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">DASHBOARD</a></li>
-                <li><a href="#">STUDY GROUPS</a></li>
-                <li><a href="#">TIMETABLE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#auth" class="btn" id="nav-login">Login</a></li>
+                <li><a href="#auth" class="btn" id="nav-signup">Sign Up</a></li>
+                <li>
+                    <button type="button" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
 
     
-<div class="content">
+<div class="content main-section" id="home">
     <h1>Your Entire<br><span>Academic life,</span><br> simplified</h1>
    <p class="par">
     Educonnect aims to provide a comprehensive solution <br>
@@ -37,20 +44,128 @@
 </p>
 
     <button class="cn">Get started</button>
+    
+    <section class="features main-section" id="features">
+        <h2>Platform Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Study Groups</h3>
+                <p>Students collaborate per course, share resources, and learn together.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Timetable Manager</h3>
+                <p>Track classes, exams, and important deadlines in one organized view.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Academic Chat</h3>
+                <p>Discuss school work, ask questions, and stay connected with classmates.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Student Dashboard</h3>
+                <p>See your progress, upcoming tasks, and key academic insights at a glance.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="form">
-        <h2>Login here</h2>
-        <input type="email" name="email" placeholder="Enter Email Here" required>
-        <input type="password" name="password" placeholder="Enter Password Here" required>
-        <button class="btn" type="submit">Login</button>
+    <section class="how-it-works main-section" id="how-it-works">
+        <h2>How It Works</h2>
+        <ol class="how-steps">
+            <li>Create your Educonnect account and set up your profile.</li>
+            <li>Join or create study groups for your courses.</li>
+            <li>Add your classes and deadlines to the timetable manager.</li>
+            <li>Use academic chat and your dashboard to stay on top of your studies.</li>
+        </ol>
+    </section>
 
-        <p class="link">Don't have an account? <a href="#">Sign up here</a></p>
-        <p class="liw">Login with</p>
-    </div>
+    <section class="about main-section" id="about">
+        <h2>About Educonnect</h2>
+        <p>
+            Educonnect is a web-based platform that combines academic collaboration with
+            student life management, helping you organize your classes, connect with peers,
+            and keep track of everything in one place.
+        </p>
+    </section>
+
+    <section class="contact main-section" id="contact">
+        <h2>Contact</h2>
+        <p>If you need help or want to share feedback, reach out:</p>
+        <ul class="contact-list">
+            <li>Email: sakaladaniel238@gmail.com</li>
+            <li>Phone: +260 772381333</li>
+        </ul>
+    </section>
+
+    <section class="auth-section main-section" id="auth">
+        <h2>Get started with Educonnect</h2>
+        <p class="auth-subtitle">
+            Login if you already have an account, or create a new one to start managing your academic life.
+        </p>
+        <div class="auth-card-wrapper">
+            <div class="auth-tabs">
+                <button class="auth-tab active" type="button" data-auth-tab="login">Login</button>
+                <button class="auth-tab" type="button" data-auth-tab="signup">Sign Up</button>
+            </div>
+            <div class="auth-forms">
+                <form id="login-form" class="auth-form active" action="dashboard.html" method="get">
+                    <div class="field-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="student@campus.edu" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="field-row">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="link-small">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="cn auth-primary-btn">Login</button>
+                </form>
+
+                <form id="signup-form" class="auth-form" action="dashboard.html" method="get">
+                    <div class="field-group">
+                        <label for="signup-name">Full name</label>
+                        <input type="text" id="signup-name" name="name" placeholder="e.g. Thabo Mokoena" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="student@campus.edu" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="signup-confirm">Confirm password</label>
+                        <input type="password" id="signup-confirm" name="confirm_password" placeholder="Repeat your password" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="signup-level">Study level (optional)</label>
+                        <select id="signup-level" name="level">
+                            <option value="">Select your level</option>
+                            <option value="undergrad">Undergraduate</option>
+                            <option value="postgrad">Postgraduate</option>
+                            <option value="college">College / TVET</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the Educonnect terms and privacy policy.</span>
+                    </label>
+                    <button type="submit" class="cn auth-primary-btn">Create account</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </div>
 
 
 </div>
 
+    <script src="script.js"></script>
     </body>
 </html>
